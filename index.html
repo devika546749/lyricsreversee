@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Lyric Reverser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Song Lyric Reverser 🎵</h1>
+        
+        <!-- Upload song -->
+        <label for="songFile">Select Song (MP3/WAV):</label>
+        <input type="file" id="songFile" accept="audio/*">
+        <audio id="audioPlayer" controls></audio>
+
+        <!-- Upload lyrics -->
+        <label for="lyricsInput">Paste or Upload Lyrics:</label>
+        <textarea id="lyricsInput" placeholder="Paste lyrics here..."></textarea>
+        <input type="file" id="lyricsFile" accept=".txt">
+
+        <button id="reverseBtn">Reverse Lyrics</button>
+
+        <h2>Reversed Lyrics:</h2>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
